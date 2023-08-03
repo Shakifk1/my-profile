@@ -5,7 +5,7 @@ import profilepic1 from "../../img/profile1.jpg"
 import profilepic2 from "../../img/profile2.jpg"
 import profilepic3 from "../../img/profile3.jpg"
 import profilepic4 from "../../img/profile4.jpg"
-import { Pagination } from 'swiper/modules';
+import {Autoplay, Pagination, Navigation } from 'swiper/modules';
 import "swiper/css/pagination"
 import "swiper/css"
 
@@ -39,9 +39,11 @@ const Testimonials = () => {
         </div>
         {/* slider */}
         <Swiper
-        modules={[Pagination]}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
         slidesPerView={1}
         pagination={{clickable:true}}
+        autoplay={{delay: 2500}}
         >
             {clients.map((client,index)=>{
                 return(

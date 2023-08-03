@@ -26,9 +26,9 @@ const Intro = () => {
         </div>
         <Link spy={true} to="Contact" smooth={true}><button className="button i-button">Hire Me</button></Link>
         <div className="i-icons">
-          <img src={Github} alt="404" />
-          <img src={Linkedin} alt="404" />
-          <img src={Instagram} alt="404" />
+          <a href="https://github.com/Shakifk1" target='_blank' rel="noreferrer"><img src={Github} alt="404" /></a>
+          <a href="https://www.linkedin.com/in/md-shakif-quaraishi/" target='_blank' rel="noreferrer"><img src={Linkedin} alt="404" /></a>
+          <a href="https://www.instagram.com/shakifk1/" target='_blank' rel="noreferrer"><img src={Instagram} alt="404" /></a>
         </div>
 
       </div>
